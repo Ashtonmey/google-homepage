@@ -1,5 +1,15 @@
 <style>
 
+body {
+    margin: 0px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
 #nav-bar {
     display: flex;
    justify-content: right; 
@@ -19,6 +29,28 @@ main {
     padding: 30px
 }
 
+a {
+    text-decoration: none;
+}
+
+.search-button {
+    background-color: rgb(241, 241, 241);
+    color: black;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 0px;
+}
+
+#sign-in-button {
+    background-color: rgb(36, 94, 255);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 0px;
+}
+
 #search-box {
     border-radius: 250px;
     height: 50px;
@@ -28,6 +60,23 @@ main {
 
 #search-box:hover {
     box-shadow: 0px 2px 2px 1px lightgray;
+}
+
+#location {
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    padding: 20px;
+    color: gray;
+}
+
+#lower-footer {
+    display: flex;
+    border: 1px solid rgb(202, 202, 202);
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    padding: 20px;
+    color: gray;
+    justify-content: space-between;
 }
 
 </style>
@@ -45,7 +94,7 @@ main {
                 <div class="link">
                 <a href="">Images</a>
                 </div>
-                <div class= "link"><button>Sign in</button>
+                <div class= "link"><button id="sign-in-button">Sign in</button>
                 </div>
             </div>
         </header>
@@ -55,18 +104,20 @@ main {
             <form action="">
                 <label for="search-text"></label>
                 <input id="search-box" type="text" name="search-text" border-radius="5px"><br><br>
-                <input type="submit" value="Google Search">
-                <input type="submit" value="I'm Feeling Lucky">
+                <input class="search-button" type="submit" value="Google Search">
+                <input class="search-button" type="submit" value="I'm Feeling Lucky">
             </form>
             </div>
             <div id="languages"><p>Google is offered in: Afrikaans Sesotho isiZulu IsiXhosa Setswana Northern Sotho</p></div>
         </div>
         </main>
         <footer>
-            <div id="location">South Africa!</div>
-            <div id="useful-links"><a href="">About</a> <a href="">Advertising</a> <a href="">Business</a> <a href="">How Search Works</a></div>
-            <div id="carbon"><a href="">Carbon Neutral Since 2007</a></div>
-            <div id="preferences"><a href="">Privacy</a> <a href="">Terms</a> <a href="">Settings</a></div>
+            <div id="location">South Africa</div>
+            <div id="lower-footer">
+                <div id="useful-links"><a href="">About</a> <a href="">Advertising</a> <a href="">Business</a> <a href="">How Search Works</a></div>
+                <div id="carbon"><a href="">Carbon Neutral Since 2007</a></div>
+                <div id="preferences"><a href="">Privacy</a> <a href="">Terms</a> <a href="">Settings</a></div>
+            </div>
         </footer>
     </body>
 </html>
